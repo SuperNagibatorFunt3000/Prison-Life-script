@@ -1,7 +1,7 @@
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperNagibatorFunt3000/UI-Library/main/Library.lua"))()
 
-local Window = Library.CreateLib("Prison Life", "RJTheme3")
+local Window = Library.CreateLib("Prison Life", "ChelovekTheme3")
 
 local Tab = Window:NewTab("Main")
 
@@ -588,6 +588,14 @@ end)
 Section:NewButton("Remove Arms", "Removes the arms from your player's character.", function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Remove%20Arms.txt"))()
 end)
+
+local Section = Tab:NewSection("Teleport")
+
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(925.121338, 99.9899902, 2388.28516, -0.998529673, -1.4277898e-08, -0.0542076416, -1.96661905e-08, 1, 9.88675737e-08, 0.0542076416, 9.97882665e-08, -0.998529673)
+end)
+
 
 
 
