@@ -1,7 +1,7 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperNagibatorFunt3000/UI-Library/main/Library.lua"))()
 
-local Window = Library.CreateLib("Prison Life", "RJTheme3")
+local Window = Library.CreateLib("Prison Life", "ChelovekTheme3")
 
 local Tab = Window:NewTab("Main")
 
