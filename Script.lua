@@ -592,7 +592,7 @@ end)
 local Section = Tab:NewSection("Teleport")
 
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("Teleport", "Teleport to prison", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new(925.121338, 99.9899902, 2388.28516, -0.998529673, -1.4277898e-08, -0.0542076416, -1.96661905e-08, 1, 9.88675737e-08, 0.0542076416, 9.97882665e-08, -0.998529673)
 end)
 
