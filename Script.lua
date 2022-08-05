@@ -1,5 +1,5 @@
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperNagibatorFunt3000/UI-Library/main/Library.lua"))()
 
 local Window = Library.CreateLib("Prison Life", "RJTheme3")
 
