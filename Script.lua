@@ -604,5 +604,5 @@ Section:NewButton("Criminal", "Teleport to criminal base", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new
 end)
 else
-  game:service('Players').LocalPlayer:Kick('Bruh')
+  game:service('Players').LocalPlayer:Kick('This script is private')
 end
