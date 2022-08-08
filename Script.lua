@@ -1,5 +1,8 @@
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperNagibatorFunt3000/White-List/main/WhiteListSettings", true))()
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/SuperNagibatorFunt3000/UI-Library/main/Library.lua"))()
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+  
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 
 local Window = Library.CreateLib("Prison Life", "RJTheme3")
 
@@ -597,8 +600,9 @@ Section:NewButton("Prison", "Teleport to prison", function()
 end)
 
 
-
-
-
-
-
+Section:NewButton("Criminal", "Teleport to criminal base", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame=CFrame.new
+end)
+else
+  game:service('Players').LocalPlayer:Kick('Bruh')
+end
